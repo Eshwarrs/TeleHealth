@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: lavender;
+}
+button { 
+       background-color: #808080; 
+       width: 50%;
+        color: lavendar; 
+        padding: 10px; 
+        margin: 10px 0px; 
+        border: 2px solid white; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 1px solid ; 
+         width: 40%;
+        margin: 0px 0px; 
+         position: center;
+    } 
+ input[type=text], input[type=password] { 
+        width: 90%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid white; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 85px; 
+         width: 50%;
+         position: center;
+        background-color: lavender
+        ;
+    } 
+.dropbtn {
+  background-color: #808080;
+  color: black;
+  width: auto; 
+ padding: 10px 18px;
+  margin: 10px 5px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style> 
+</head>  
+<body>  
+    <center> <h1> Login Form </h1> </center> 
+    <center>
+    <form>
+    
+        <div class="container"> 
+        
+            <label>Username : </label> 
+            <input type="text" placeholder="Enter email" name="email" required><br><br>
+            <label>Password : </label> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button> <br>
+            <input type="checkbox" checked="checked"> Remember me 
+            <button type="button" class="cancelbtn"> Cancel</button> <br>
+            Forgot <a href="#"> password? </a> 
+        </div> 
+      create account
+<div class="dropdown">
+  <button class="dropbtn">signup</button>
+  <div class="dropdown-content">
+    <a href="patient.html">register as patient</a>
+    <a href="doctor.html">register as doctor</a>
+
+   
+  </div>
+</div>
+    </form>   
+    </center>
+</body>   
+</html>
