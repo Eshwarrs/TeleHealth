@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<HTML>
+<style>
+  /* head {color: coral;
+        font-weight: bolder;
+        text-align: center;
+
+  } */
+  .container {
+    height: 5px;
+    position: relative;
+
+  }
+
+  .vertical-center {
+    margin: 1px;
+    position: absolute;
+    top: 16%;
+    left: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  
+}
+* {
+  box-sizing: border-box;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  body {
+    margin-top: 2px;
+    background-color: rgb(146, 219, 219);
+    margin-left: .5in;
+    margin-right: .5in;
+    color: white;
+  }
+
+  h2,
+  h1 {
+    color: coral;
+    font-weight: bolder;
+  }
+
+  input[TYPE="submit"] {
+    background-color: rgb(2, 82, 82);
+    border: 1em;
+    color: white;
+    border-color: rgba(0, 0, 0, 0.815);
+    align-self: strech;
+
+  }
+
+
+  div {
+    border-radius: 5px;
+    background-color: rgb(7, 124, 124);
+    padding: 20px;
+  }
+</style>
+
+<HEAD>
+  <h1>BOOK APPOINTMENT</h1>
+</HEAD>
+
+<BODY>
+  <div>
+    <FORM>
+      <h2>Enter Details to book an appointment </h2>
+      <hr>
+
+      <P> Select type of appointment:
+        <input type="radio" id="video_appointment_type" name="appointment_type" value="video">
+        <label for="video"> Video Appointment</label>
+        <input type="radio" id="audio_appointment_type" name="audio_appointmeent_type" value="audio">
+        <label for="audio"> Audio Appointment</label><br>
+      </P>
+
+      <P> Describe the reason for this appointment?</P>
+      <input type="testbox" id="txt1" name="reason_of_appointment" size="105"><br>
+      <label for="txt1"> <br> <br>
+        <label for="appointment">Select date of the appointment : </label>
+
+        <input type="date" data-date-inline-picker="true" id="appointment_date" name="appointment_date" max="4/22/2021">
+
+        <br>
+        <h2>Health History</h2>
+        <p> Have you ever been diagnosed, treated, tested or given medical advice by a physician or other health care
+          provider for:</p>
+                 
+        <ol>
+          <div class="row">
+            <div class="column" >  
+          <li>chest pain or heart problems <label for="chest_pain_yes">
+              <input id="chest_pain_yes" type="radio" name="yes_chest_pain">yes
+            </label> 
+            <label for="chest_pain_no">
+              <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+            </label>
+          </li><BR>
+          <li>high blood pressure? <input id="chest_pain_yes" type="radio" name="yes_chest_pain">yes
+      </label>
+      <label for="chest_pain_no">
+        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+      </label></li>
+      </li><BR>
+      <li>anemia, leukemia or other blood disorder? <input id="chest_pain_yes" type="radio" name="yes_chest_pain">yes
+        </label>
+        <label for="chest_pain_no">
+          <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+        </label>
+      </li><BR>
+      <li> cancer or tumors? <input id="chest_pain_yes" type="radio" name="yes_chest_pain">yes
+        </label>
+        <label for="chest_pain_no">
+          <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+        </label>
+      </li><BR>
+      <li> diabetes? <input id="chest_pain_yes" type="radio" name="yes_chest_pain">yes
+        </label>
+        <label for="chest_pain_no">
+          <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+        </label>
+      </li><BR>
+      <li> arthritis, carpal tunnel, or any muscle insulin treated? weakness? </li><input id="chest_pain_yes" type="radio"
+          name="yes_chest_pain">yes
+        </label>
+        <label for="chest_pain_no">
+          <input id="chest_pain_no" type="radio" name="no_chest_pain">no 
+        </label><br>
+      <BR>
+      <li> kidney or urinary tract disorder?<input id="chest_pain_yes" type="radio"
+        name="yes_chest_pain">yes
+      </label>
+      <label for="chest_pain_no">
+        <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+      </label>
+    </li><BR>
+    <li>asthma, tuberculosis, pneumonia, or other m. kidney or urinary tract disorder?<input id="chest_pain_yes" type="radio"
+      name="yes_chest_pain">yes
+    </label>
+    <label for="chest_pain_no">
+      <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+    </label></li>
+      </div>
+      <div class="column">
+    <li>ulcers, stomach or liver disorder? <input id="chest_pain_yes" type="radio"
+      name="yes_chest_pain">yes
+    </label>
+    <label for="chest_pain_no">
+      <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+    </label></li><BR>
+    <li>colitis, Crohn’s or any intestinal disorder?<input id="chest_pain_yes" type="radio"
+      name="yes_chest_pain">yes
+    </label>
+    <label for="chest_pain_no">
+      <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+    </label></li><BR>
+    <li> Epilepsy, paralysis or dizziness?
+      <input id="chest_pain_yes" type="radio"
+      name="yes_chest_pain">yes
+    </label>
+    <label for="chest_pain_no">
+      <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+    </label></li><BR>
+    <li>mental or nervous disorder?
+      <input id="chest_pain_yes" type="radio"
+      name="yes_chest_pain">yes
+    </label>
+    <label for="chest_pain_no">
+      <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+    </label></li><BR>
+    <li>Lyme disease, Epstein-Barr or chronic fatigue?     
+      <input id="chest_pain_yes" type="radio"
+      name="yes_chest_pain">yes
+    </label>
+    <label for="chest_pain_no">
+      <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+    </label></li><BR>
+    <li>thyroid or other gland disorder?
+      <input id="chest_pain_yes" type="radio"
+      name="yes_chest_pain">yes
+    </label>
+    <label for="chest_pain_no">
+      <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+    </label></li><BR>
+    <li>back, neck or spinal disorder?
+
+      <input id="chest_pain_yes" type="radio"
+      name="yes_chest_pain">yes
+    </label>
+    <label for="chest_pain_no">
+      <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+    </label></li> </ol>
+  </div>
+  </div>
+     
+
+
+      
+      <div>
+        <label for="providers">Choose Your Insurance Provider</label>
+        <select name="providers" id="insurance_provider">
+          <option value="default">Select</option>
+          <option value="united">United Healthcare</option>
+        </select>
+        <P>Is the person booking the appointment the primary health Insurance holder?  <input id="chest_pain_yes" type="radio"
+          name="yes_chest_pain">yes
+        </label>
+        <label for="chest_pain_no">
+          <input id="chest_pain_no" type="radio" name="no_chest_pain">no
+        </label></li></P>
+        <P>Enter your insurance Identification number :
+      <input type="testbox" id="txt2" name="insurance_number" size="15"><br>
+    </P>
+      </div>
+      <div>
+      <h2>Required Forms</h2>
+      <P> please submit the above forms and following documents by attaching at the link below</P>
+      <p>1. Insurance ID card </p>
+      <p>2. Placehlder form #1 </p>
+      <p>3. Placehlder form #2 </p> 
+      <input type="file" placeholder="link" required><br><br>
+      <button onclick="myFunction()">Upload Another Document</button>
+    
+      <button type="submit">Submit</button>
+      <hr> <br>
+      </div>
+      <div class="container">
+        <div class="vertical-center">
+          <input type="submit" value="Confirm Appointment">
+        </div>
+      </div>
+    </FORM>
+    <script>
+      function myFunction() {
+        var x = document.createElement("INPUT");
+        x.setAttribute("type", "file");
+        document.body.appendChild(x);
+      }
+      </script>
+      
+</BODY>
+
+</HTML>

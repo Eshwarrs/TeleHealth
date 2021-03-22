@@ -1,0 +1,75 @@
+<Html>
+    <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+    Registration Page
+    </title>
+    </head>
+    <body bgcolor="lavender">
+    <br>
+    <br>
+    <form>
+    <h1>Doctor's registration form</h1>
+    <label> Firstname </label>       
+    <input type="text" name="firstname" size="15"/> <br> <br>
+    <label> Middlename: </label>   
+    <input type="text" name="middlename" size="15"/> <br> <br>
+    <label> Lastname: </label>       
+    <input type="text" name="lastname" size="15"/> <br> <br>
+    
+    
+   
+      <label for="DOB">DOB:</label>
+      <input type="date" id="DOB" name="DOB">
+      <input type="submit">
+    </form>
+    
+    
+    <label> 
+    Gender :
+    </label><br>
+    <input type="radio" name="male"/> Male 
+    <input type="radio" name="female"/> Female 
+    <input type="radio" name="other"/> Other
+    <br>
+    <br>
+    
+    <label> 
+    Phone :
+    </label>
+    <input type="text" name="country code"  value="" size="2"/> 
+    <input type="text" name="phone" size="10"/> <br> <br>
+    email:
+    </label>
+    <br>
+    <textarea cols="70" rows="1" value="email">
+    </textarea><br><br>
+    <label> social security number </label>       
+    <input type="text" name="social security number" size="15"/> <br> <br>
+    Education:  upload documents<br><br>
+    <form action="/action_page.php">
+    <input type="file" id="myFile" name="filename">
+     
+    </form>
+    Experience(in years):
+         
+    <input type="number" name="experience" size="15"/> <br> <br>
+    <label> 
+        specialization :
+    </label> 
+    <select>
+    <option value="specialization">specialization</option>
+    <option value="dentist">dentist</option>
+    <option value="dermatalogist">dermatalogist</option>
+    <option value="neurologist">neurologist</option>
+    <option value="psychologist">psychologist</option>
+    <option value="general physician">general physician</option>
+    </select><br><br>
+    licence:
+    </label>
+    <br>
+    <textarea cols="70" rows="3" value="email">
+    </textarea><br><br>
+    Address
+    <br>
+    <textarea cols="80" rows="5" value="address">

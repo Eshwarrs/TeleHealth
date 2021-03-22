@@ -1,0 +1,111 @@
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  float:right;
+    display:flex;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+#Cancel{
+    float:right;
+    display:flex;
+    margin-right:0px;
+    clear:left;
+}
+
+h2 {text-align: left;}
+h4 {text-align: left;}
+ h3 {text-align: left;}
+
+</style>
+</head>
+<body>
+  <label for="sortby">Choose:</label>
+  <select name="sortby" id="sortby">
+    
+    <option value="Recent">Recent</option>
+    <option value="Last Week">Last Week</option>
+    <option value="Month Ago">Month Ago</option>
+    <option value="1Year">1Year</option>
+  </select>
+<br>
+
+<div class="row">
+  <div class="row" style="background-color:rgb(193, 165, 230);">
+
+    <h2>Disease : BackPain</h2>
+    <h4>Status : Active</h4>
+    <button  type="button" id="Cancel" class=btn>Prescription</button>
+    <h4>   Date : 3/15/2020</h4>
+
+    <button  type="button" id="Cancel" class=btn disabled />Cancel</button>
+   
+  </div>
+  <div class="row" style="background-color:rgb(193, 165, 230);">
+    <h2>Disease : COVID</h2>
+    <h4>Status : Done</h4>
+    <button  type="button" id="Cancel"class=btn>Prescription</button>
+    <h4>   Date : 2/10/2020</h4>
+    <button  type="button" id="Cancel" class=btn  disabled />Cancel</button>
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+
+
+/* Optional: Add active class to the current button (highlight it) */
+var btns = document.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
