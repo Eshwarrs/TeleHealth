@@ -1,90 +1,301 @@
-<Html>
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-    Registration Page
-    </title>
-    </head>
-    <body bgcolor="lavender">
-    <br>
-    <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: lavender;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+           
+            margin: 0;
+        }
+
+        input{
+            padding: 5px;
+            border-radius: 5px;
+            border-color: white;
+        }
+
+        h1 {
+            color: blue;
+        }
+        h2 {
+            color: blue;
+        }
+
+        table {
+            color: brown;
+        }
+
+        td{
+            padding: 10px;
+        }
+
+        button {
+            background-color: yellowgreen;
+            
+            border-radius: 5px;
+            width: 100px;
+            height: 30px;
+        }
+        form {
+            padding: 150px;
+            background-color:#E6E6FA;
+        }
+    </style>
+</head>
+
+<body>
     <form>
-    
-    <h1>patient's registration form</h1>
-    <h2>patient's info</h2>
-    <label>Firstname</label>       
-    <input type="text" name="firstname" size="15"/> <br> <br>
-    <label> Middlename: </label>   
-    <input type="text" name="middlename" size="15"/> <br> <br>
-    <label> Lastname: </label>       
-    <input type="text" name="lastname" size="15"/> <br> <br>
+       <h1>patient's registration form</h1>
+    <h2 style="color: #1E5878; text-align: center;"> <b>patient's info</b></h2>
+        <table align="center">
+            <tr>
+                <td>
+                    First Name<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    middle Name<span style="color: red;"></span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td>
+                    Last Name<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>
+              <tr>
+                <td>
+                    DOB <span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                      <input type="text" placeholder="__/__/____" name="">
    
-      <label for="DOB">DOB:</label>
-      <input type="date" id="DOB" name="DOB">
-      <input type="submit">
-    </form>
-    
-    <label> 
-    Gender :
-    </label><br>
-    <input type="radio" name="male"/> Male 
+                </td>
+            </tr>
+              <tr>
+                <td>
+                    Gender<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                  <input type="radio" name="male"/> Male 
     <input type="radio" name="female"/> Female 
     <input type="radio" name="other"/> Other
-    <br>
-    <br>
+                </td>
+            </tr>
+                        
+            <tr>
+                <td>
+                    phone number<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                   <input type="text" name="country code"  value="" size="2"/> 
+    <input type="text" name="phone" size="10"/>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    SSN<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+           
+    <input type="text" placeholder="xxx-xx-xxxx" name="">
+                </td>
+            </tr> 
+            
+            
+            
+            
+            
+            
+            <tr>
+            <tr>
+                <td>
+                    Email Address<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="mail" placeholder="" name="">
+                </td>
+            </tr>
+            
+             <tr>
+                <td>
+                    address <span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="street address"><br>
+                    
+                     <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="apt no"><br>
+                      <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="city"><br>
+                       <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="state"><br>
+                        <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="zip code"><br>
+                        
+                        
+                        
+                <h2 style="color: #1E5878; text-align: center;"> <b>employee info</b></h2>     
+                </td>
+            </tr>
+            
+            
+             
+      
+            
+      <tr>
+                <td>
+                    First Name<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    middle Name<span style="color: red;"></span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td>
+                    Last Name<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>      
+             <tr>
+                <td>
+                    phone number<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                   <input type="text" name="country code"  value="" size="2"/> 
+    <input type="text" name="phone" size="10"/>
+                </td>
+            </tr> 
+             <tr>
+                <td>
+                    address <span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="street address"><br>
+                    
+                    <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="apt no"><br>
+                    <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="city"><br>
+                       <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="state"><br>
+                        <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="zip code"><br>
+                         <h2 style="color: #1E5878; text-align: center;"> <b>in case of emergency</b></h2> 
+            </td>
+            </tr>
+           
     
-    <label> 
-    Phone :
-    </label>
-    <input type="text" name="country code"  value="" size="2"/> 
-    <input type="text" name="phone" size="10"/> <br> <br>
-    <label> social security number </label>       
-    <input type="text" name="social security number" size="15"/> <br> <br>
-    <label> 
-    email:
-    </label>
-    <br>
-    <textarea cols="70" rows="1" value="email">
-    </textarea><br><br>
-    marital status :
-    </label><br>
-    <input type="radio" name="single"/> single 
-    <input type="radio" name="married"/> married 
-    <input type="radio" name="divorced"/> divorced
-    <input type="radio" name="widowed"/> Other
-    <br>
-    <br>
-    <label> 
-    Address
-    </label>
-    <br>
-    <textarea cols="80" rows="5" value="address">
-    </textarea>
-    <h2>employer's info</h2>
-    <label> Firstname </label>       
-    <input type="text" name="firstname" size="15"/> <br> <br>
-    <label> lastname: </label>   
-    <input type="text" name="lastname" size="15"/> <br> <br>
-    Phone :
-    </label>
-    <input type="text" name="country code"  value="" size="2"/> 
-    <input type="text" name="phone" size="10"/> <br> <br>
-    Address
-    </label>
-    <br>
-    <textarea cols="80" rows="5" value="address">
-    </textarea>
-    <h2>in case of emergency</h2>
-    <label> name </label>       
-    <input type="text" name="name" size="15"/> <br> <br>
-    <label> relationship: </label>   
-    <input type="text" name="relationship" size="15"/> <br> <br>
-    Phone :
-    </label>
-    <input type="text" name="country code"  value="" size="2"/> 
-    <input type="text" name="phone" size="10"/> <br> <br>
-    Address
-    </label>
-    <br>
-    <textarea cols="80" rows="5" value="address">
-    </textarea>
+          
+            <tr>
+                <td>
+                    First Name<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    middle Name<span style="color: red;"></span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td>
+                    Last Name<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>      
+             <tr>
+                <td>
+                    phone number<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                   <input type="text" name="country code"  value="" size="2"/> 
+    <input type="text" name="phone" size="10"/>
+                </td>
+            </tr> 
+             <tr>
+                <td>
+                    address <span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="street address"><br>
+                    
+                     <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="apt no"><br>
+                      <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="city"><br>
+                       <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="state"><br>
+                        <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="zip code"><br>
+                        
+            </td>
+            </tr> 
+           
+          
+           
+            <tr>
+                <td>
+                    <br>
+                    <button type="submit" class="">Register</button>
+
+                </td>
+                <td>
+                    <br>
+                    <button type="cancel" class="cancelbtn">cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,75 +1,235 @@
-<Html>
-    <head> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-    Registration Page
-    </title>
-    </head>
-    <body bgcolor="lavender">
-    <br>
-    <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: lavender;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+           
+            margin: 0;
+        }
+
+        input{
+            padding: 5px;
+            border-radius: 5px;
+            border-color: white;
+        }
+
+        h1 {
+            color: blue;
+        }
+        h2 {
+            color: blue;
+        }
+
+        table {
+            color: brown;
+        }
+
+        td{
+            padding: 10px;
+        }
+
+        button {
+            background-color: greenyellow;
+            
+            border-radius: 5px;
+            width: 100px;
+            height: 30px;
+        }
+        form {
+            padding: 150px;
+            background-color:#E6E6FA;
+        }
+    </style>
+</head>
+
+<body>
     <form>
-    <h1>Doctor's registration form</h1>
-    <label> Firstname </label>       
-    <input type="text" name="firstname" size="15"/> <br> <br>
-    <label> Middlename: </label>   
-    <input type="text" name="middlename" size="15"/> <br> <br>
-    <label> Lastname: </label>       
-    <input type="text" name="lastname" size="15"/> <br> <br>
-    
-    
+       <h1>Doctor's registration form</h1>
    
-      <label for="DOB">DOB:</label>
-      <input type="date" id="DOB" name="DOB">
-      <input type="submit">
-    </form>
-    
-    
-    <label> 
-    Gender :
-    </label><br>
-    <input type="radio" name="male"/> Male 
+        <table align="center">
+            <tr>
+                <td>
+                    First Name<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    middle Name<span style="color: red;"></span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td>
+                    Last Name<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="" name="">
+                </td>
+            </tr>
+              <tr>
+                <td>
+                    DOB <span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                      <input type="text" placeholder="__/__/____" name="">
+   
+                </td>
+            </tr>
+              <tr>
+                <td>
+                    Gender<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                  <input type="radio" name="male"/> Male 
     <input type="radio" name="female"/> Female 
     <input type="radio" name="other"/> Other
-    <br>
-    <br>
+                </td>
+            </tr>
+                        
+            <tr>
+                <td>
+                    phone number<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                   <input type="text" name="country code"  value="" size="2"/> 
+    <input type="text" name="phone" size="10"/>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    SSN<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+           
+    <input type="text" placeholder="xxx-xx-xxxx" name="">
+                </td>
+            </tr> 
+            
+            
+            
+            
+            
+            
+            <tr>
+            <tr>
+                <td>
+                    Email Address<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="mail" placeholder="" name="">
+                </td>
+            </tr>
+             
+            
+            
+            <tr>
+            <tr>
+                <td>
+                   education:
+                   upload documents<span style="color: red;">*</span>:
+                    
     
-    <label> 
-    Phone :
-    </label>
-    <input type="text" name="country code"  value="" size="2"/> 
-    <input type="text" name="phone" size="10"/> <br> <br>
-    email:
-    </label>
-    <br>
-    <textarea cols="70" rows="1" value="email">
-    </textarea><br><br>
-    <label> social security number </label>       
-    <input type="text" name="social security number" size="15"/> <br> <br>
-    Education:  upload documents<br><br>
-    <form action="/action_page.php">
-    <input type="file" id="myFile" name="filename">
-     
-    </form>
-    Experience(in years):
-         
-    <input type="number" name="experience" size="15"/> <br> <br>
-    <label> 
-        specialization :
-    </label> 
-    <select>
+                </td>
+
+                <td>
+                  
+    <input type="file" form action="/action_page.php" id="myFile" name="filename">
+                </td>
+            </tr>
+            
+            <tr>
+            <tr>
+                <td>
+                  specialization <span style="color: red;"></span>
+                    
+    
+                </td>
+
+                <td>
+                
+                  
+   <select>
     <option value="specialization">specialization</option>
     <option value="dentist">dentist</option>
-    <option value="dermatalogist">dermatalogist</option>
+    <option value="dermatalogist">dermatologist</option>
     <option value="neurologist">neurologist</option>
     <option value="psychologist">psychologist</option>
     <option value="general physician">general physician</option>
-    </select><br><br>
-    licence:
-    </label>
-    <br>
-    <textarea cols="70" rows="3" value="email">
-    </textarea><br><br>
-    Address
-    <br>
-    <textarea cols="80" rows="5" value="address">
+    </select>
+                </td>
+            </tr>
+            
+        <tr>
+            <tr>
+                <td>
+                    liscence<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="mail" placeholder="" name="">
+                </td>
+            </tr>
+            
+            
+            
+            
+            
+             <tr>
+                <td>
+                    address <span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="street address"><br>
+                    
+                     <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="apt no"><br>
+                      <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="city"><br>
+                       <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="state"><br>
+                        <input class="form-control" type="text" cols="80" rows="5" value="" placeholder="zip code"><br>
+                  <tr>
+                <td>
+                    <br>
+                    <button type="submit" class="">Register</button>
+
+                </td>
+                <td>
+                    <br>
+                    <button type="cancel" class="cancelbtn">cancel</button>
+                </td>
+            </tr>          
+                        
+                        
+               
+        </table>
+    </form>
+</body>
+
+</html>
