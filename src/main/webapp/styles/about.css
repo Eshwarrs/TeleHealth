@@ -38,7 +38,7 @@
 	margin: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
-	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	-webkit-text-shadow: rgba(123, 21, 21, 0.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
 body
@@ -94,11 +94,11 @@ a, a:hover, a:visited, a:active, a:link
 }
 a:hover
 {
-	color: #20d34a !important;
+	color: orange !important;
 }
 ::selection
 {
-	color: #20d34a;
+	color: orange;
 }
 p::selection
 {
@@ -222,7 +222,7 @@ section
 {
 	display: inline-block;
 	height: 51px;
-	background: #283290;
+	background: #902828;
 }
 .button::after
 {
@@ -232,7 +232,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 3px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 	z-index: 0;
 	-webkit-transition: all 400ms cubic-bezier(.33,.68,.59,.99);
@@ -248,7 +248,7 @@ section
 	line-height: 51px;
 	font-size: 14px;
 	font-weight: 900;
-	color: #FFFFFF;
+	color: #0e8eea;
 	padding-left: 39px;
 	padding-right: 45px;
 	text-transform: uppercase;
@@ -261,7 +261,7 @@ section
 }
 .button:hover a
 {
-	color: #FFFFFF !important;
+	color: #ed710b !important;
 }
 .section_title
 {
@@ -281,7 +281,7 @@ section
 	top: 0;
 	width: 54px;
 	height: 3px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 }
 .section_title_light h2
@@ -447,7 +447,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: orange;
 }
 .logo
 {
@@ -455,7 +455,7 @@ section
 }
 .logo span
 {
-	color: #20d34a;
+	color: orange;
 }
 .logo_container a .logo:hover
 {
@@ -505,7 +505,7 @@ section
 	right: -50vw;
 	width: 50vw;
 	height: 100vh;
-	background: #FFFFFF;
+	background: orange;
 	z-index: 101;
 	-webkit-transition: all 0.6s ease;
 	-moz-transition: all 0.6s ease;
@@ -565,7 +565,7 @@ section
 	font-family: 'Roboto', sans-serif;
 	font-size: 36px;
 	font-weight: 700;
-	color: #272727;
+	color: orange;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -622,7 +622,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #20d34a;
+	background: powderblue;
 }
 .menu_extra
 {
@@ -635,7 +635,7 @@ section
 .menu_appointment a
 {
 	font-size: 13px;
-	color: #283290;
+	color: #d5e708;
 }
 .menu_emergencies
 {
@@ -675,7 +675,7 @@ section
 }
 .home_title span
 {
-	color: #20d34a;
+	color: orange;
 }
 .breadcrumbs
 {
@@ -751,7 +751,7 @@ section
 {
 	width: 100%;
 	height: 287px;
-	background: #283290;
+	background: orange;
 	padding-left: 42px;
 	padding-top: 29px;
 	-webkit-transition: all 200ms ease;
@@ -772,7 +772,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 }
 .box:hover
@@ -826,7 +826,7 @@ section
 {
 	font-size: 30px;
 	font-weight: 400;
-	color: #20d34a;
+	color: orange;
 	margin-top: 20px;
 }
 .box_appointments
@@ -876,7 +876,7 @@ section
 {
 	width: 45px;
 	height: 45px;
-	background: #20d34a;
+	background: orange;
 }
 .test_text
 {
@@ -915,7 +915,7 @@ section
 }
 .test_author_name span
 {
-	color: #20d34a;
+	color: orange;
 	font-style: italic;
 }
 
@@ -1036,7 +1036,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 }
 .footer_logo_container a
@@ -1077,7 +1077,7 @@ section
 	display: inline-block;
 	width: 31px;
 	height: 31px;
-	background: #20d34a;
+	background: orange;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -1142,7 +1142,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #20d34a;
+	color: orange;
 	margin-top: 7px;
 }
 .footer_news ul li:not(:last-child)
@@ -1179,7 +1179,7 @@ section
 }
 .footer_social ul li a i
 {
-	color: #20d34a;
+	color: orange;
 	padding: 5px;
 	font-size: 14px;
 	-webkit-transition: all 200ms ease;

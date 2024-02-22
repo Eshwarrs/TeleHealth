@@ -95,11 +95,11 @@ a, a:hover, a:visited, a:active, a:link
 }
 a:hover
 {
-	color: #20d34a !important;
+	color: orange !important;
 }
 ::selection
 {
-	color: #20d34a;
+	color: orange;
 }
 p::selection
 {
@@ -233,7 +233,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 3px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 	z-index: 0;
 	-webkit-transition: all 400ms cubic-bezier(.33,.68,.59,.99);
@@ -282,7 +282,7 @@ section
 	top: 0;
 	width: 54px;
 	height: 3px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 }
 .section_title_light h2
@@ -448,7 +448,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: orange;
 }
 .logo
 {
@@ -456,7 +456,7 @@ section
 }
 .logo span
 {
-	color: #20d34a;
+	color: orange;
 }
 .logo_container a .logo:hover
 {
@@ -474,7 +474,7 @@ section
 	display: inline-block;
 	width: 23px;
 	height: 23px;
-	background: #20d34a;
+	background: orange;
 	color: #FFFFFF;
 	font-size: 24px;
 	line-height: 23px;
@@ -623,7 +623,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #20d34a;
+	background: orange;
 }
 .menu_extra
 {
@@ -677,7 +677,7 @@ section
 	width: 0;
 	max-width: 100%;
 	height: 2px;
-	background: #20d34a;
+	background: orange;
 	z-index: 1;
 }
 .home_content
@@ -753,7 +753,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 }
 .box:hover
@@ -807,7 +807,7 @@ section
 {
 	font-size: 30px;
 	font-weight: 400;
-	color: #20d34a;
+	color: orange;
 	margin-top: 20px;
 }
 .box_appointments
@@ -911,7 +911,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 5px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 }
 .dept_title
@@ -979,7 +979,7 @@ section
 }
 .service:hover
 {
-	background: #283290;
+	background: yellow;
 }
 .service::after
 {
@@ -989,7 +989,7 @@ section
 	bottom: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 	visibility: hidden;
 	opacity: 0;
@@ -1024,7 +1024,7 @@ section
 .svg rect,
 .svg polygon
 {
-	fill: #20d34a;
+	fill: orange;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -1071,7 +1071,7 @@ section
 	transform: translateX(-50%);
 	width: 54px;
 	height: 3px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 }
 .service:hover .service_title
@@ -1152,7 +1152,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 4px;
-	background: #20d34a;
+	background: orange;
 	content: '';
 }
 .footer_logo_container a
@@ -1193,7 +1193,7 @@ section
 	display: inline-block;
 	width: 31px;
 	height: 31px;
-	background: #20d34a;
+	background: orange;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -1258,7 +1258,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 500;
-	color: #20d34a;
+	color: orange;
 	margin-top: 7px;
 }
 .footer_news ul li:not(:last-child)
@@ -1295,7 +1295,7 @@ section
 }
 .footer_social ul li a i
 {
-	color: #20d34a;
+	color: orange;
 	padding: 5px;
 	font-size: 14px;
 	-webkit-transition: all 200ms ease;
